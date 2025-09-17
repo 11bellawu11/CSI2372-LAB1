@@ -70,6 +70,7 @@ int main() {
 	for (int i = 0; i < a.size(); i++) {
 		cout << "\n" << a[i];
 	}
+	
 	cout << "\n";
 
 	arraySorted = sort(a);
