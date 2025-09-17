@@ -31,7 +31,15 @@ void exchange(int& a, int& b) {
 
 void sort(vector<int>& T) {
 
-	//YOUR CODE
+	for (int i = 0; i < T.size() ; i++) {
+		for (int j = 0; j < T.size() - 1; j++) {
+			if (T[i] < T[j]) {
+				exchange(T[i], T[j]);
+				break;
+			}
+		}
+	}
+	return T;
 }
 
 /* arrayEntry function to enter values ​​from your table

@@ -11,7 +11,7 @@ using namespace std;
 */
 int searchIndex(vector<int> T, int imax) {
 	if (T.size() < imax - 1) {
-		cout << "Erreur ! Tableau trop petit ! " << endl;
+		cout << "Error! Array too small" << endl;
 		return -1;
 	}
 	int res = 0;
@@ -32,7 +32,13 @@ void exchange(int& a, int& b) {
 **
 */
 vector<int> sort(vector<int> T) {
-	//YOUR CODE
+	int lastIndex = T.size() - 1;
+	for (int i = 0; i < T.size() - 1; i++) {
+		int currentBiggestIndex = searchIndex(T, lastIndex);
+		exchange(T[lastIndex], T[currentBiggestIndex]);
+		lastIndex--;
+	}
+	return T;
 }
 
 
