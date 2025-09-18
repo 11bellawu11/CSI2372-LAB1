@@ -26,18 +26,16 @@ int main(void) {
 	cout << "Number in octal: " << oct << n << endl;
 	cout << "Number in hexadecimal: " << hex << n << endl;
 	//second method: 
-	cout << endl << "Number in decimal: " << n << endl;
+	cout << endl << "Number in decimal: " << setbase(10) << n << endl;
 	cout << "Number in octal: " << setbase(8) << n << endl;
 	cout << "Number in hexadecimal: " << setbase(16) << n << endl;
-
 
 	//Ask for real number + display as scientific notation w/3 sf
 	double r;
 	cout << endl << "Enter a real number: ";
 	cin >> r;
 	cout << r << endl;
-	cout << scientific << setprecision(2) << r << endl;
-
+	cout << setiosflags(ios::scientific) << setprecision(3) << r << endl;
 
 	//Ask for a character + display int value
 	char c;
