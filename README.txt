@@ -1,3 +1,3 @@
-Student Name: Tori Wu, 
-Student Number: 300231361, 
+Student Name: Tori Wu, Bella Wu
+Student Number: 300231361, 300249920
 Course Code: CSI2372A
